@@ -152,7 +152,7 @@ namespace UnitTests
             var problemDetails = JsonConvert.DeserializeObject<ProblemDetails>(content);
 
             //Assert 
-            StringAssert.Contains("urn:flavorbox:error:", problemDetails.Instance);
+            StringAssert.Contains("urn:exampleapplication:error:", problemDetails.Instance);
         }
         
         [Test]
